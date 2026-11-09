@@ -15,7 +15,7 @@
                     <div class="flex h-16 items-center justify-between">
                         <div class="flex items-center">
                             <div class="flex-shrink-0">
-                                <img class="h-12 w-12" src="/images/logo.png" alt="Your Company">
+                                <img class="h-12 w-12" src="/images/zonnevallei_logo.png" alt="Hotel De Zonne Vallei">
                             </div>
                             <div class="hidden md:block">
                                 <div class="ml-10 flex items-baseline space-x-4">
