@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('boekings', function (Blueprint $table) {
             $table->id();
             $table->integer('boekingsnummer');
-            $table->foreign('kamernummer')->references('id')->on('hotel_kamers');
-            $table->foreign('gastnummer')->references('id')->on('users');
+            $table->foreignId('kamernummer')->constrained('hotel_kamers');
+            $table->foreignId('gastnummer')->constrained('users');
             $table->integer('aantalgasten');
             $table->date('aankomstdatum');
             $table->date('vertrekdatum');
