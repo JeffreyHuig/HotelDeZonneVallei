@@ -18,7 +18,9 @@ test('profile information can be updated', function () {
     $response = $this
         ->actingAs($user)
         ->patch('/profile', [
-            'name' => 'Test User',
+            'firstName' => 'Test',
+            'lastName' => 'User',
+            'phone' => '0612345678',
             'email' => 'test@example.com',
         ]);
 
@@ -28,9 +30,47 @@ test('profile information can be updated', function () {
 
     $user->refresh();
 
-    $this->assertSame('Test User', $user->name);
+    $this->assertSame('Test', $user->firstName);
+    $this->assertSame('User', $user->lastName);
+    $this->assertSame('0612345678', $user->phone);
     $this->assertSame('test@example.com', $user->email);
     $this->assertNull($user->email_verified_at);
+});
+
+test('phone number keeps its preceding zero', function () {
+    $user = User::factory()->create(['phone' => '0612345678']);
+
+    $this->actingAs($user)
+        ->get('/profile')
+        ->assertOk()
+        ->assertSee('0612345678');
+
+    $this->actingAs($user)
+        ->patch('/profile', [
+            'firstName' => $user->firstName,
+            'lastName' => $user->lastName,
+            'phone' => '0687654321',
+            'email' => $user->email,
+        ])
+        ->assertSessionHasNoErrors();
+
+    $this->assertSame('0687654321', $user->refresh()->phone);
+    $this->assertDatabaseHas('users', ['phone' => '0687654321']);
+});
+
+test('phone number without a preceding zero is rejected', function () {
+    $user = User::factory()->create();
+
+    $this->actingAs($user)
+        ->from('/profile')
+        ->patch('/profile', [
+            'firstName' => $user->firstName,
+            'lastName' => $user->lastName,
+            'phone' => '612345678',
+            'email' => $user->email,
+        ])
+        ->assertSessionHasErrors('phone')
+        ->assertRedirect('/profile');
 });
 
 test('email verification status is unchanged when the email address is unchanged', function () {
@@ -39,7 +79,9 @@ test('email verification status is unchanged when the email address is unchanged
     $response = $this
         ->actingAs($user)
         ->patch('/profile', [
-            'name' => 'Test User',
+            'firstName' => 'Test',
+            'lastName' => 'User',
+            'phone' => $user->phone,
             'email' => $user->email,
         ]);
 

@@ -28,13 +28,14 @@
                             </div>
                         </div>
                         <div class="hidden md:block">
-                            <div class="ml-4 flex items-center md:ml-6">
+                            <div class="ml-4 flex items-center md:ml-6 space-x-4">
                                 @guest
                                     <x-nav-link href="/login" :active="request()->is('login')">Login</x-nav-link>    
                                     <x-nav-link href="/register" :active="request()->is('register')">Register</x-nav-link>   
                                 @endguest
 
                                 @auth
+                                    <x-nav-link href="{{ route('dashboard') }}">Dashboard</x-nav-link>
                                     <form method="POST" action="/logout">
                                         @csrf
                                         
@@ -49,17 +50,6 @@
             <header class="bg-white shadow">
                 <div class="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8 sm:flex sm:justify-between">
                     <h1 class="text-3xl font-bold tracking-tight text-gray-900">{{ $heading }}</h1>
-                    @auth
-                        <x-button id="startButton">Start Game</x-button>
-                    @endauth
-                    {{-- @auth
-                        <x-forms.form method="POST" action="/highscores" class="flex flex-row">
-                            <input type="text" name="Game_Name" value="{{ $breakoutAdvanced->game->name }}" hidden>
-                            <input type="text" name="User_Name" value="{{ $user->user_name }}" hidden> 
-                            <input id="Score" type="text" name="Score" placeholder="0" value="" onchange="" disabled>
-                            <x-forms.button>Submit</x-forms.button>
-                        </x-forms.form>
-                    @endauth --}}
                 </div>
             </header>
 
