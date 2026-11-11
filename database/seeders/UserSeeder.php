@@ -17,8 +17,11 @@ class UserSeeder extends Seeder
             'firstName' => 'Bart',
             'lastName' => 'Vink',
             'phone' => '0612345678',
-            'email' => 'b.vink@hoteldezonnevallei.com',
+            'email' => 'info@hoteldezonnevallei.com',
             'password' => 'password',
+            'email_verified_at' => null,
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
     }
 }
