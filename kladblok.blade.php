@@ -7,35 +7,35 @@ Split Kamertype Naar Nieuwe Tabel:
     - omschrijving kamertype
 
 Aantal Bedden:
-Eenpersoonskamer
-Tweepersoonskamer (Double)
-Twin-Kamer
-Driepersoonskamer (Triple)
-Vierpersoonskamer (Quad)
-Familiekamer
+1-Eenpersoonskamer
+2-Tweepersoonskamer (Double)
+3-Twin-Kamer
+4-Driepersoonskamer (Triple)
+5-Vierpersoonskamer (Quad)
+6-Familiekamer
 
 Luxeniveau:
-Voordeelkamer (Budget / Promo)
-Standaardkamer (Standard)
-Comfort / Superior kamer
-Deluxe kamer
-Executive Kamer
+1-Voordeelkamer (Budget / Promo)
+2-Standaardkamer (Standard)
+3-Comfort / Superior kamer
+4-Deluxe kamer
+5-Executive Kamer
 
 Suite / Indeling:
-Junior Suite
-Suite
-Presidentiële Suite / Penthouse
-Studio / Appartement
-Duplex kamer
+1-Junior Suite
+2-Suite
+3-Presidentiële Suite / Penthouse
+4-Studio / Appartement
+5-Duplex kamer
 
 Ligging / Extra's:
-Swim-up kamer
-Bruidssuite
+1-Swim-up kamer
+2-Bruidssuite
 Kamer met specifiek uitzicht:
-    - landzicht
-    - tuinzicht
-    - zwembadzicht
-    - zeezicht
+3-    - landzicht
+4-    - tuinzicht
+5-    - zwembadzicht
+6-    - zeezicht
 
 
 Kamertypes met omschrijving:
