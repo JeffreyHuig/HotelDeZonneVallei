@@ -12,7 +12,7 @@ class LiggingExtraSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::table('liggin_extras')->insert([
+        DB::table('ligging_extras')->insert([
             [
                 'ligging/extras' => 'Swim-up kamer',
                 'created_at' => now(),
