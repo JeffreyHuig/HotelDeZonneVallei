@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->integer('kamernummer');
             $table->integer('verdieping');
-            $table->string('kamertype');
+            $table->foreignId('kamertype_id')->constrained();
             $table->decimal('prijs', total: 6, places: 2);
             $table->boolean('beschikbaarheid');
             $table->timestamps();
