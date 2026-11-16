@@ -13,8 +13,7 @@ return new class extends Migration
     {
         Schema::create('ligging_extras', function (Blueprint $table) {
             $table->id();
-            $table->string('ligging');
-            $table->string('extras');
+            $table->string('ligging/extras');
             $table->timestamps();
         });
     }
