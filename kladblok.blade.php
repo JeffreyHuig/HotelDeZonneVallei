@@ -1,10 +1,14 @@
-Split Kamertype Naar Nieuwe Tabel:
-    - foreign id hotelkamer_id
+Hotelkamer Tabel:
+    - id
+    - kamernummer
+    - verdieping
     - bezetting(aantal personen max) -> aparte tabel
     - Luxeniveau -> aparte tabel
     - Suite / Indeling -> nullable -> aparte tabel
     - Ligging / Extra's -> nullable -> aparte tabel
     - omschrijving kamertype
+    - prijs
+    - beschikbaarheid
 
 Aantal Bedden:
 1-Eenpersoonskamer
