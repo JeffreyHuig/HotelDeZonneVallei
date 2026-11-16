@@ -16,6 +16,10 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             UserSeeder::class,
+            BezettingSeeder::class,
+            LiggingExtraSeeder::class,
+            LuxeniveauSeeder::class,
+            SuiteIndelingSeeder::class
         ]);       
     }
 }
