@@ -19,7 +19,8 @@ class DatabaseSeeder extends Seeder
             BezettingSeeder::class,
             LiggingExtraSeeder::class,
             LuxeniveauSeeder::class,
-            SuiteIndelingSeeder::class
+            SuiteIndelingSeeder::class,
+            HotelKamerSeeder::class,
         ]);       
     }
 }
