@@ -47,13 +47,13 @@ Eenpersoonskamer
 Een kamer met één bed, bedoeld voor één persoon.
 
 Tweepersoonskamer (Double)
-Een kamer voor twee personen met één groot (vaak tweepersoons- of kingsize) bed.
+Een kamer voor twee personen met één groot (tweepersoons- of kingsize) bed.
 
 Twin-Kamer
 Een tweepersoonskamer, maar dan met twee losse bedden.
 
 Driepersoonskamer (Triple)
-Een kamer voor drie personen, vaak met een combinatie van een tweepersoonsbed en een los bed (of een slaapbank).
+Een kamer voor drie personen, met een combinatie van een tweepersoonsbed en een los bed (of een slaapbank).
 
 Vierpersoonskamer (Quad)
 Een kamer voor vier personen, uitgerust met meerdere bedden of stapelbedden.
