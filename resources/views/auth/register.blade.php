@@ -1,8 +1,11 @@
+@php
+    use Carbon\Carbon;
+    $today = Carbon::today()->toDateString();
+@endphp
 <x-layout>
     <x-slot:heading>
         Register
     </x-slot:heading>
-
     <x-forms.form method="POST" action="/register">
         <div class="space-y-12">
             <div class="border-b border-gray-900/10 pb-12">
@@ -10,6 +13,8 @@
                     <x-forms.input label="First Name" name="firstName" />
 
                     <x-forms.input label="Last Name" name="lastName" />
+
+                    <x-forms.input type="date" label="Date Of Birth" name="dateOfBirth" :max="$today" />
 
                     <x-forms.input label="Phone Number" name="phone" type="tel" />
 
