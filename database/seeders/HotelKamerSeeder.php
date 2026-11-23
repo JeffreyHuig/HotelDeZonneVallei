@@ -847,7 +847,7 @@ class HotelKamerSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'kamernummer' => '8',
+                'kamernummer' => '801',
                 'verdieping' => '8',
                 'bezetting_id' => '2',
                 'luxeniveau_id' => '4',
