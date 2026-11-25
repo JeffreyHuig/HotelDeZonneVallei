@@ -16,7 +16,7 @@ return new class extends Migration
             $table->integer('kamernummer');
             $table->integer('verdieping');
             $table->foreignId('bezetting_id')->constrained('bezettings');
-            $table->foreignId('luxeniveau_id')->constrained('luxeniveaus');
+            $table->foreignId('luxeniveau_id')->nullable()->constrained('luxeniveaus');
             $table->foreignId('suite_indeling_id')->nullable()->constrained();
             $table->foreignId('ligging_extra_id')->nullable()->constrained();
             $table->decimal('prijs', total: 6, places: 2);
