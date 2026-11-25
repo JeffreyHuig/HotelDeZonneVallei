@@ -5,15 +5,15 @@ namespace App\Models;
 use Database\Factories\LiggingExtraFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class LiggingExtra extends Model
 {
     /** @use HasFactory<LiggingExtraFactory> */
     use HasFactory;
 
-    public function hotelKamer(): BelongsTo
+    public function hotelKamer(): HasMany
     {
-        return $this->belongsTo(HotelKamer::class);
+        return $this->hasMany(HotelKamer::class);
     }
 }

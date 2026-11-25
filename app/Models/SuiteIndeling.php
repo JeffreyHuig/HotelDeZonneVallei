@@ -5,15 +5,15 @@ namespace App\Models;
 use Database\Factories\SuiteIndelingFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class SuiteIndeling extends Model
 {
     /** @use HasFactory<SuiteIndelingFactory> */
     use HasFactory;
 
-    public function hotelKamer(): BelongsTo
+    public function hotelKamer(): HasMany
     {
-        return $this->belongsTo(HotelKamer::class);
+        return $this->hasMany(HotelKamer::class);
     }
 }

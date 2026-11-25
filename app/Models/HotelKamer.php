@@ -4,30 +4,30 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\HasOne;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class HotelKamer extends Model
 {
     /** @use HasFactory<\Database\Factories\HotelKamerFactory> */
     use HasFactory;
 
-    public function bezetting(): HasOne
+    public function bezetting(): BelongsTo
     {
-        return $this->hasOne(Bezetting::class);
+        return $this->belongsTo(Bezetting::class);
     }
 
-    public function luxeniveau(): HasOne
+    public function luxeniveau(): BelongsTo
     {
-        return $this->hasOne(Luxeniveau::class);
+        return $this->belongsTo(Luxeniveau::class);
     }
 
-    public function suiteIndeling(): HasOne
+    public function suiteIndeling(): BelongsTo
     {
-        return $this->hasOne(SuiteIndeling::class);
+        return $this->belongsTo(SuiteIndeling::class);
     }
 
-    public function liggingExtra(): HasOne
+    public function liggingExtra(): BelongsTo
     {
-        return $this->hasOne(LiggingExtra::class);
+        return $this->belongsTo(LiggingExtra::class);
     }
 }
