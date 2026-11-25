@@ -1,15 +1,16 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\HotelKamerController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('home');
+Route::controller(HomeController::class)->group(function () {
+    Route::get('/', 'index');
 });
 
-Route::controller(HotelKamerController::class)->group(function() {
-    Route::get('/hotelkamers','index');
+Route::controller(HotelKamerController::class)->group(function () {
+    Route::get('/hotelkamers', 'index');
 });
 
 Route::get('/restaurant', function () {
