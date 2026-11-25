@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('bezettings', function (Blueprint $table) {
             $table->id();
             $table->string('bezettingstype');
+            $table->text('omschrijving');
             $table->timestamps();
         });
     }

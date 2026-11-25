@@ -19,7 +19,6 @@ return new class extends Migration
             $table->foreignId('luxeniveau_id')->constrained('luxeniveaus');
             $table->foreignId('suite_indeling_id')->nullable()->constrained();
             $table->foreignId('ligging_extra_id')->nullable()->constrained();
-            $table->text('omschrijving');
             $table->decimal('prijs', total: 6, places: 2);
             $table->boolean('beschikbaarheid');
             $table->timestamps();

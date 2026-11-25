@@ -33,11 +33,6 @@ class LuxeniveauSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
-            [
-                'luxeniveau' => 'Executive kamer',
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
         ]);
     }
 }
