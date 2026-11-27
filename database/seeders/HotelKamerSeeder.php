@@ -136,7 +136,7 @@ class HotelKamerSeeder extends Seeder
             [
                 'kamernummer' => '201',
                 'verdieping' => '2',
-                'bezetting_id' => '1',
+                'bezetting_id' => '7',
                 'luxeniveau_id' => null,
                 'suite_indeling_id' => '1',
                 'ligging_extra_id' => '3',
@@ -148,7 +148,7 @@ class HotelKamerSeeder extends Seeder
             [
                 'kamernummer' => '202',
                 'verdieping' => '2',
-                'bezetting_id' => '1',
+                'bezetting_id' => '7',
                 'luxeniveau_id' => null,
                 'suite_indeling_id' => '1',
                 'ligging_extra_id' => '3',
@@ -160,7 +160,7 @@ class HotelKamerSeeder extends Seeder
             [
                 'kamernummer' => '203',
                 'verdieping' => '2',
-                'bezetting_id' => '1',
+                'bezetting_id' => '7',
                 'luxeniveau_id' => null,
                 'suite_indeling_id' => '1',
                 'ligging_extra_id' => '3',
@@ -172,7 +172,7 @@ class HotelKamerSeeder extends Seeder
             [
                 'kamernummer' => '204',
                 'verdieping' => '2',
-                'bezetting_id' => '1',
+                'bezetting_id' => '7',
                 'luxeniveau_id' => null,
                 'suite_indeling_id' => '1',
                 'ligging_extra_id' => '3',
@@ -496,7 +496,7 @@ class HotelKamerSeeder extends Seeder
             [
                 'kamernummer' => '501',
                 'verdieping' => '5',
-                'bezetting_id' => '1',
+                'bezetting_id' => '7',
                 'luxeniveau_id' => null,
                 'suite_indeling_id' => '1',
                 'ligging_extra_id' => '3',
@@ -508,7 +508,7 @@ class HotelKamerSeeder extends Seeder
             [
                 'kamernummer' => '502',
                 'verdieping' => '5',
-                'bezetting_id' => '1',
+                'bezetting_id' => '7',
                 'luxeniveau_id' => null,
                 'suite_indeling_id' => '1',
                 'ligging_extra_id' => '3',
@@ -520,7 +520,7 @@ class HotelKamerSeeder extends Seeder
             [
                 'kamernummer' => '503',
                 'verdieping' => '5',
-                'bezetting_id' => '1',
+                'bezetting_id' => '7',
                 'luxeniveau_id' => null,
                 'suite_indeling_id' => '1',
                 'ligging_extra_id' => '3',
@@ -532,7 +532,7 @@ class HotelKamerSeeder extends Seeder
             [
                 'kamernummer' => '504',
                 'verdieping' => '5',
-                'bezetting_id' => '1',
+                'bezetting_id' => '7',
                 'luxeniveau_id' => null,
                 'suite_indeling_id' => '1',
                 'ligging_extra_id' => '3',
